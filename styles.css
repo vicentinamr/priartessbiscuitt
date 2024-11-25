@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffd3e1, #b3d4fc);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service, .item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* Paleta de cores baseada nas imagens */
+:root {
+    --background-gradient: linear-gradient(90deg, #F7E1E5, #D3E9E3); /* Gradiente principal */
+    --card-gradient: linear-gradient(120deg, #FAD8E5, #F4ECE9);      /* Gradiente para os cartões */
+    --button-color: #0056b3; /* Azul dos botões */
+    --button-hover-color: #004494; /* Azul escuro ao passar o mouse */
+    --text-color: #2A3B4C;   /* Cor dos textos principais */
+    --secondary-text-color: #6E7E8C; /* Cor secundária dos textos */
+    --highlight-color: #FF6F61; /* Cor de destaque */
+}
+
+/* Estilo geral do corpo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Fonte elegante e limpa */
+    color: var(--text-color);
+    background: var(--background-gradient);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: var(--card-gradient);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: var(--highlight-color);
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Seção principal */
+main {
+    padding: 20px;
+}
+
+/* Botões */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--button-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: var(--button-hover-color);
+}
+
+/* Cartões */
+.card {
+    background: var(--card-gradient);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: var(--highlight-color);
+}
+
+.card p {
+    color: var(--secondary-text-color);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: var(--card-gradient);
+    color: var(--secondary-text-color);
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffd3e1, #b3d4fc);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #5a5a5a;
+    font-size: 2rem;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: row;    /* Coloca os itens na horizontal */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;    /* Alinha os itens ao centro verticalmente */
+    gap: 30px;              /* Espaçamento entre os itens */
+    padding: 20px;
+}
+
+.service-item {
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px; /* Largura consistente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item img {
+    width: 100%;
+    max-width: 150px; /* Tamanho máximo das imagens */
+    height: auto;
+    border-radius: 50%; /* Imagens circulares */
+    margin-bottom: 10px;
+}
+
+.service-item h2 {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f0f0f0;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    display: inline-block;
+    background: #ff0077;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background: #b3004b;
+}
+
+.contact-info ul {
+    list-style-type: none; /* Remove os marcadores */
+    padding: 0;           /* Remove o preenchimento padrão */
+    margin: 0;            /* Remove a margem padrão */
+}
+
+.contact-info li {
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+}
